@@ -13,8 +13,15 @@ admin.site.index_title = "Welcome to Food Admin Panel"
 
 
 
-admin.site.register(KidTable)
+# admin.site.register(KidTable)
 # admin.site.register(ImageTable)
+
+
+@admin.register(KidTable) 
+class KidTableAdmin(admin.ModelAdmin):
+    fields = ['name', 'age', 'phone', 'email']
+    list_display = ('name', 'age', 'phone', 'email')
+    
 
 
 @admin.register(ImageTable) 
@@ -23,8 +30,7 @@ class ImageTableAdmin(admin.ModelAdmin):
     readonly_fields = ['image_tag', 'updated_on']
     radio_fields = {"Food_group": admin.HORIZONTAL}
     list_display = ('image_url', 'image_tag', 'created_on', 'updated_on', 'is_approved', 'approved_by', 'Food_group')
-    # def save_model(self, request, obj, form, change):
-    #     obj.approved_by = request.user
-    #     obj.save()
+    
+     
 
 
