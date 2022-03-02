@@ -24,7 +24,7 @@ class KidTable(models.Model):
 
 class ImageTable(models.Model):
     kid = models.ForeignKey(KidTable, on_delete=models.CASCADE)
-    image_url = models.URLField(max_length=2000)
+    image_url = models.URLField(max_length=20000)
     def image_tag(self):
         return mark_safe(f'<img src="{self.image_url}" width="150" height="150" />')
 
