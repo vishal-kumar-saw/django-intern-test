@@ -17,12 +17,12 @@ Create a Django App
         5. Is Approved
         6. Approved by
         7. Food Group
-  b. Create a django admin page to add kids and corresponding images.
-  c. While adding the image from admin, annotate whether the image has Fruit,
-  Vegetable, Grain, protein, dairy or unknown in it (see image 1).
-  d. If the image does not contain food (unknown), send a notification to the parent
-  that the image does not contain food via an email.
-  e. Host the web server to any free public hosting provider like heroku.
+  ## b. Create a django admin page to add kids and corresponding images.
+  ## c. While adding the image from admin, annotate whether the image has Fruit,
+  ## Vegetable, Grain, protein, dairy or unknown in it (see image 1).
+  ## d. If the image does not contain food (unknown), send a notification to the parent
+  ## that the image does not contain food via an email.
+  ## e. Host the web server to any free public hosting provider like heroku.
   
   ## You can visit the website by clicking [here](https://django-intern-task.herokuapp.com "Django Intern Task page")
   
